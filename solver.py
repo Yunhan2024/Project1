@@ -15,3 +15,11 @@ def general_search(initial_state, heuristic_func=None):
     start_f = initial_state.cost + heuristic_func(initial_state)
     frontier = [(start_f, 0, initial_state)]
     heapq.heapify(frontier)
+
+    #data structures
+    explored = set()
+    #explore states explores in linear time
+    frontier_dict = {str(initial_state.board): (initial_state, start_f)}
+    #dictionary to check states faster than p
+    counter = 1
+    #used in even f(n)

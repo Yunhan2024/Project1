@@ -13,7 +13,7 @@ def main():
     ]
 
     # manual input
-    use_default = input("Use default state (1,2,3,4,0,5,6,7,8)? (y/n): ").lower() == 'y'
+    use_default = input("Use default state (1,2,3,4,0,6,7,5,8)? (y/n): ").lower() == 'y'
 
     if use_default:
         board = default_board
