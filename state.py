@@ -49,4 +49,37 @@ class PuzzleState:
 
         return PuzzleState(new_board, self, direction, self.cost + 1)
 
+    def misplaced_tile(self):
+        #misplaced tile heuristic function
+        count = 0
+        goal = [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+
+        for i in range(len(self.board)):
+            for j in range(len(self.board[0])):
+                if self.board[i][j] != 0 and self.board[i][j] != goal[i][j]:
+                    count += 1
+
+        return count
+
+    def manhattan_distance(self):
+        #manhattan distance heuristic
+        distance = 0
+
+        for i in range(len(self.board)):
+            for j in range(len(self.board[0])):
+                tile = self.board[i][j]
+                if tile != 0:
+                    # 计算tile的目标位置
+                    goal_i, goal_j = (tile - 1) // 3, (tile - 1) % 3
+                    distance += abs(i - goal_i) + abs(j - goal_j)
+
+        return distance
+
+
+    def print_board(self):
+        #print the board
+        for row in self.board:
+            print(" ".join(str(x) if x != 0 else "_" for x in row))
+        print()
+
 
