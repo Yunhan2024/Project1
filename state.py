@@ -14,3 +14,23 @@ class PuzzleState:
                     self.blank = (i, j)
                     return
     # find where is space
+
+    def whether_is_goal(self):
+        goal=[[1,2,3], [4,5,6], [7,8,0]]
+        return self.board == goal
+    #determine whether the current state is goal
+
+
+    def try_moves(self ):
+        #try possible move
+        i,j = self.blank
+        moves =[]
+
+        if(i>0): moves.append('up')
+        if(j>0): moves.append('left')
+        if(i<len(self.board)-1): moves.append('down')
+        if(j<len(self.board[0])-1): moves.append('right')
+
+        return moves
+
+
