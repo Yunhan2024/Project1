@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24c1725f-c2c3-453c-96be-a3e5f4e9cc79" name="Changes" comment="initialize General Search and main test function state(default and manual input)">
+    <list default="true" id="24c1725f-c2c3-453c-96be-a3e5f4e9cc79" name="Changes" comment="useful data structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/solver.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746756658776</updated>
       <workItem from="1746756662859" duration="796000" />
-      <workItem from="1746758222683" duration="2514000" />
+      <workItem from="1746758222683" duration="3420000" />
     </task>
     <task id="LOCAL-00001" summary="the state function">
       <option name="closed" value="true" />
@@ -118,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746762206972</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="useful data structure">
+      <option name="closed" value="true" />
+      <created>1746763316596</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746763316596</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +149,7 @@
     <MESSAGE value="move and change" />
     <MESSAGE value="heuristic function finished" />
     <MESSAGE value="initialize General Search and main test function state(default and manual input)" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialize General Search and main test function state(default and manual input)" />
+    <MESSAGE value="useful data structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="useful data structure" />
   </component>
 </project>
