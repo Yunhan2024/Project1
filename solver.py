@@ -78,3 +78,17 @@ def general_search(initial_state, heuristic=None):
     # no solution
     end_time = time.time()
     return None, nodes_expanded, max_queue_size, end_time - start_time
+
+def traceback_path(state):
+    #track back from solution to initial state
+    if not state:
+        return []
+
+    path = []
+    current = state
+
+    while current:
+        path.append(current)
+        current = current.parent
+
+    return list(reversed(path))
