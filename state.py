@@ -33,4 +33,20 @@ class PuzzleState:
 
         return moves
 
+    def move(self, direction):
+        #make a move and change to a new state
+        i, j = self.blank
+        new_board = copy.deepcopy(self.board)
+
+        if direction == 'up':
+            new_board[i][j], new_board[i - 1][j] = new_board[i - 1][j], new_board[i][j]
+        elif direction == 'down':
+            new_board[i][j], new_board[i + 1][j] = new_board[i + 1][j], new_board[i][j]
+        elif direction == 'left':
+            new_board[i][j], new_board[i][j - 1] = new_board[i][j - 1], new_board[i][j]
+        elif direction == 'right':
+            new_board[i][j], new_board[i][j + 1] = new_board[i][j + 1], new_board[i][j]
+
+        return PuzzleState(new_board, self, direction, self.cost + 1)
+
 
